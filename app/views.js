@@ -84,9 +84,9 @@ function filterBar(deals, f) {
 export function list(deals, f) {
   const shown = applyFilters(deals, f);
   return `<section class="hero">
-  <p class="kicker">Black Friday · 27 Nov 2026</p>
+  <p class="kicker">Black Friday · 27–28 Nov 2026</p>
   <h1>Black Friday, checked.</h1>
-  <p class="lede">Thirty-five real deals, each price read on the day — sale price, usual price, store, and when it was checked. No invented prices, no stale roundups.</p>
+  <p class="lede">Fifty-seven real deals, each price read on the day — sale price, usual price, store, and when it was checked. No invented prices, no stale roundups.</p>
 </section>
 ${stats(deals)}
 ${filterBar(deals, f)}
@@ -94,7 +94,7 @@ ${filterBar(deals, f)}
 <section class="grid" id="grid">${cards(shown)}</section>
 <footer class="method">
   <h2>How these prices were checked</h2>
-  <p>Every deal on this page was found and checked by an agent on 27 November 2026: the sale price and the usual price were read on the source page named on each deal, and the store link goes to that product at that store. Two usual prices come from the discount the source page states in full. Prices move fast on Black Friday — always re-check the store link before you buy. All prices in US dollars.</p>
+  <p>Every deal on this page was found and checked by an agent on 27 and 28 November 2026: the sale price and the usual price were read on the source page named on each deal, and the store link goes to that product at that store. The 34 deals first found on 27 November were re-checked on 28 November — every price still read the same — and one deal whose source page could not be re-opened that day was dropped. Four usual prices come from the discount the source page states in full. Prices move fast on Black Friday — always re-check the store link before you buy. All prices in US dollars.</p>
 </footer>`;
 }
 
